@@ -1,0 +1,27 @@
+--cpu Cortex-M7.fp.dp
+"hcsp04_module\startup_stm32f767xx.o"
+"hcsp04_module\stm32f7xx_hal_gpio.o"
+"hcsp04_module\stm32f7xx_hal_cortex.o"
+"hcsp04_module\stm32f7xx_hal_dma_ex.o"
+"hcsp04_module\stm32f7xx_hal_i2c.o"
+"hcsp04_module\stm32f7xx_hal_tim_ex.o"
+"hcsp04_module\stm32f7xx_hal_pwr_ex.o"
+"hcsp04_module\stm32f7xx_hal_i2c_ex.o"
+"hcsp04_module\stm32f7xx_hal_flash_ex.o"
+"hcsp04_module\stm32f7xx_hal.o"
+"hcsp04_module\stm32f7xx_hal_tim.o"
+"hcsp04_module\stm32f7xx_hal_dma.o"
+"hcsp04_module\stm32f7xx_hal_pwr.o"
+"hcsp04_module\stm32f7xx_hal_flash.o"
+"hcsp04_module\stm32f7xx_hal_rcc.o"
+"hcsp04_module\stm32f7xx_hal_rcc_ex.o"
+"hcsp04_module\stm32f7xx_hal_uart.o"
+"hcsp04_module\system_stm32f7xx.o"
+"hcsp04_module\stm32f7xx_hal_msp.o"
+"hcsp04_module\stm32f7xx_it.o"
+"hcsp04_module\main.o"
+"hcsp04_module\serial.o"
+--library_type=microlib --strict --scatter "HCSP04_Module\HCSP04_Module.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HCSP04_Module.map" -o HCSP04_Module\HCSP04_Module.axf
